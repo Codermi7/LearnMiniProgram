@@ -1,4 +1,4 @@
-// pages/about/about.js
+// pages/goods_list/index.js
 Page({
 
   /**
