@@ -1,0 +1,36 @@
+.goods_list {
+    .list {
+        navigator {
+            display: flex;
+            padding: 20rpx;
+            justify-content: center;
+            position: relative;
+            image {
+                flex: 2;
+                // width: 40%;
+            }
+            .goods_info {
+                padding-left: 20rpx;
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .goods_name {
+                    align-content: start;
+                }
+                .goods_price {
+                    color:#f40
+                }
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                background: #e5e5e5;
+                height: 1px;
+                left: 40%;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+}

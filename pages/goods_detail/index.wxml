@@ -1,2 +1,17 @@
-<!--pages/goods_detail/index.wxml-->
-<text>pages/goods_detail/index.wxml</text>
+<view class="goods_detail">
+    <SearchInput></SearchInput>
+    <swiper class="detail_swiper"
+            autoplay="{{true}}" 
+            circular="{{true}}"
+            indicator-dots="{{true}}"
+            indicator-active-color="#ff5577"
+    >
+        <swiper-item wx:for="{{pics}}"
+                     wx:key="{{item.pics_id}}"
+        >
+            <image mode="aspectFit" src="{{item.pics_mid}}" />
+        </swiper-item>
+    </swiper>
+    <view class="goods_price">￥<text class="price">{{goods_price}}</text></view>
+    <rich-text nodes="{{goods_introduce}}"></rich-text>
+</view>

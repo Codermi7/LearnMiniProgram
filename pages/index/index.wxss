@@ -1,5 +1,4 @@
 .index_swiper {
-  height: 750rpx;
   height: 340rpx;
 }
 .index_swiper image {

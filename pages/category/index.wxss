@@ -20,10 +20,10 @@ page {
 }
 .category .Cate .menu-list .active {
   color: var(--themeColor);
-  border-left: 5rpx solid curr;
+  border-left: 5rpx solid currentColor;
 }
 .category .Cate .category-content {
-  flex: 5;
+  flex: 6;
 }
 .category .Cate .category-content .goods_group .goods_title {
   height: 80rpx;
@@ -45,5 +45,5 @@ page {
   padding: 10rpx 0;
 }
 .category .Cate .category-content .goods_group .goods_list navigator image {
-  width: 50%;
+  width: 70%;
 }
