@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+  background: #fff;
+}
+.container .info-left {
+  display: flex;
+  justify-content: space-around;
+  flex: 4;
+  text-align: center;
+  font-size: 30rpx;
+}
+.container .info-left .iconfont {
+  font-size: 48rpx;
+  display: block;
+}
+.container .info-right {
+  flex: 6;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  justify-content: space-around;
+}
+.container .info-right view {
+  border-radius: 40rpx;
+  padding: 0 20rpx;
+  margin: 0 10rpx;
+  flex: 1;
+  color: #fff;
+  background: linear-gradient(90deg, #f2140c, #f2270c);
+}
+.container .info-right view:last-child {
+  background: linear-gradient(90deg, #ffba0d, #ffc30d);
+}
+.container .info-img {
+  width: 200rpx;
+}

@@ -1,3 +1,7 @@
+
+.goods_detail {
+  padding-bottom: 100rpx;
+}
 .goods_detail .detail_swiper {
   height: 400rpx;
 }
@@ -8,10 +12,27 @@
   height: 100rpx;
   background: linear-gradient(90deg, #DE3060, #F36E30);
   color: #fff;
-  display: flex;
   align-items: center;
   padding-left: 20rpx;
+  display: flex;
+  justify-content: space-between;
 }
 .goods_detail .goods_price .price {
   font-size: 48rpx;
+}
+.goods_detail .goods_price .info-r {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 20rpx;
+}
+.goods_detail .goods_price .info-r text {
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+.goods_detail .goods_name {
+  font-size: 32rpx;
+  color: #262626;
+  font-weight: bold;
+  padding: 20rpx;
 }

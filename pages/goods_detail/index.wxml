@@ -1,5 +1,6 @@
 <view class="goods_detail">
-    <SearchInput></SearchInput>
+    <!-- <SearchInput></SearchInput> -->
+    
     <swiper class="detail_swiper"
             autoplay="{{true}}" 
             circular="{{true}}"
@@ -12,6 +13,19 @@
             <image mode="aspectFit" src="{{item.pics_mid}}" />
         </swiper-item>
     </swiper>
-    <view class="goods_price">￥<text class="price">{{goods_price}}</text></view>
+    <view class="goods_price">
+       
+      <view class="info-l" >
+        ￥
+        <text class="price">{{goods_info.goods_price}}</text>
+       </view>
+       <view class="info-r">
+           <text >商品数量:{{goods_info.goods_number}}</text>
+           <text >商品重量:{{goods_info.goods_weight/1000}}kg</text>
+       </view>
+    </view>
+    <view class="goods_name">{{goods_info.goods_name}}</view>
     <rich-text nodes="{{goods_introduce}}"></rich-text>
+    <view  class="Popout">我我我</view>
+    <DetailBottomBar image="{{pics[0].pics_sma}}" price="{{goods_info.goods_price}}"></DetailBottomBar>
 </view>

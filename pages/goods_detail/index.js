@@ -1,5 +1,6 @@
 import {request} from '../../request/index.js'
 import regeneratorRuntime from '../../lib/runtime/runtime.js'
+import { GoodsInfo } from '../../utils/object.js'
 Page({
 
   /**
@@ -11,7 +12,8 @@ Page({
     attrs:[],
     goods_introduce:'',
     goods_name:'',
-    goods_price:0
+    goods_price:0,
+    goods_info:{}
   },
 
   /**
@@ -27,13 +29,13 @@ Page({
     let goods_id = this.data.goods_id
     let res = await request({ url:'/goods/detail', data:{ goods_id}})
     let result = res.data.message
-    let {pics,attrs,goods_introduce,goods_name,goods_price} = result
+    let goods_info = new GoodsInfo(result)
+    let {pics,attrs,goods_introduce} = result
     this.setData({
       pics,
       attrs,
       goods_introduce,
-      goods_name,
-      goods_price
+      goods_info
     })
   },
 

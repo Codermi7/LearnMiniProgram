@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="info-left">
+    <navigator >
+       <text class="iconfont icon-kefu"></text>
+        <text>客服</text>
+    </navigator>
+       
+    <navigator>
+        <text class="iconfont icon-dianpu"></text>
+        <text >店铺</text>
+    </navigator>
+    <navigator >
+          <text class="iconfont icon-48"></text>
+          <text >购物车</text>
+    </navigator>
+  </view>
+  <view class="info-right">
+     <view is-link bind:tap="showPopup">加入购物车</view>
+     <view is-link bind:tap="showBuyPop">立即购买</view>
+    
+  </view>
+   <van-popup position="bottom"  closeable class="pop-wrap"
+       close-icon="close" show="{{show}}" bind:close="onClose">
+       <image class="info-img" mode="widthFix" src="{{image}}" />
+       <text >{{price}}</text>
+       </van-popup>
+        <van-popup position="bottom"  closeable
+       close-icon="close" show="{{buy}}" bind:close="onBuyClose">
+       <image mode="widthFix" src="{{image}}" />
+       </van-popup>
+</view>

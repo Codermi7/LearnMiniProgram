@@ -1,5 +1,5 @@
 @import './styles/iconfont.wxss';
-
+/* @import './weui-miniprogram/weui-wxss/dist/style/weui.wxss'; */
 /* 微信小程序不支持通配符 '*' */
 
 page,view,text,swiper,swiper-item,image,navigator{

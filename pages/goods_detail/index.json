@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "SearchInput":"../../components/SearchInput/SearchInput"
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "DetailBottomBar":"../../components/detail-bottom-bar/detail-bottom-bar"
   },
   "navigationBarTitleText": "商品详情"
 }
